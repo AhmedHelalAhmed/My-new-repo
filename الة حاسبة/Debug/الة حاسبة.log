@@ -1,0 +1,27 @@
+﻿Build started 11/15/2018 9:41:15 PM.
+     1>Project "C:\Users\Chemist Ahmed\Desktop\calculator\الة حاسبة\الة حاسبة.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\الة حاسبة.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "الة حاسبة.cpp"
+         الة حاسبة.cpp
+     1>c:\users\chemist ahmed\desktop\calculator\الة حاسبة\الة حاسبة.cpp(82): warning C4715: 'sub' : not all control paths return a value
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\الة حاسبة.exe.embed.manifest.res" "Debug\الة حاسبة_manifest.rc" 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Chemist Ahmed\Desktop\calculator\Debug\الة حاسبة.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\الة حاسبة.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Chemist Ahmed\Desktop\calculator\Debug\الة حاسبة.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Chemist Ahmed\Desktop\calculator\Debug\الة حاسبة.lib" /MACHINE:X86 "Debug\الة حاسبة.exe.embed.manifest.res"
+         "Debug\الة حاسبة.obj"
+       Manifest:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\الة حاسبة.exe.embed.manifest" /manifest "Debug\الة حاسبة.exe.intermediate.manifest"
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         الة حاسبة.vcxproj -> C:\Users\Chemist Ahmed\Desktop\calculator\Debug\الة حاسبة.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\الة حاسبة.unsuccessfulbuild".
+         Touching "Debug\الة حاسبة.lastbuildstate".
+     1>Done Building Project "C:\Users\Chemist Ahmed\Desktop\calculator\الة حاسبة\الة حاسبة.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.81

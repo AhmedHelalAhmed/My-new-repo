@@ -4,14 +4,15 @@ int sum (int x , int y);
 int sub (int x , int y);
 int mult (int x , int y);
 int d (int x , int y);
-int pow (int x , int y);
+float pow (int x , int y);
+float powinloop (int x , int y);
+
 int main()
 {
 	int a,b;
 	int choice =0;
 
 	while(choice!=6)
-
 	{
 	cout<<"enter 1 for sum"<<endl ;
 	cout<<"enter 2 for substruct"<<endl ;
@@ -49,7 +50,7 @@ int main()
 	case (5):
 	cout<<"enter two numbers for power\n";
 	cin>>a>>b;
-	cout<<pow(a,b)<<endl;
+	cout<< powinloop(a,b)<<endl;
 	break;
 
 
@@ -100,16 +101,50 @@ int d (int x , int y)
 
 }
 
-int pow (int x , int y)
+float pow (int x , int y)
 {
 
 	 if(y==0)
-		 return 1;
+	 {
+		return 1;
+	 }
 	 else if (y>0)
-		 return x * pow(x,y-1);
+	 {
+		return x * pow(x,y-1);
+	 }
 	 else
-	  return 1 / pow(x,-y);
+	 {
+	    return 1.0 / pow(x,-y);
+	 }
+}
 
+float powinloop (int x , int y)
+{
+    int y_is_negative=0;
+    if(y<0)
+    {
+        y_is_negative=1;
+        y=-y;
+    }
+	float res=1;
 
+	 for(int i=1;i<=y;i++)
+	 {
+		res*=x;//res=res*x;
 
+		/*
+		i=1
+		res=1*2
+		i=2
+		res=2*2
+		i=3
+		res=4*2
+		*/
+	 }
+
+    if(y_is_negative)
+    {
+        res=1/res;
+    }
+	 return res;
 }

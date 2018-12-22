@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-int sum (int x , int y);
-int sub (int x , int y);
+int sum (int first_input_from_user , int b);
+int substraction (int x , int y);
 int mult (int x , int y);
 int d (int x , int y);
 float pow (int x , int y);
@@ -10,7 +10,7 @@ float powinloop (int x , int y);
 int main()
 {
 	int a,b;
-	int choice =0;
+	int choice_input_from_user =0;
 
 	while(choice!=6)
 	{
@@ -78,7 +78,7 @@ int sub (int x , int y)
 	if ( x>=y)
 		return x-y;
 	else
-		cout<<"error\n";
+		return -x;
 
 }
 int mult (int x , int y)
@@ -89,13 +89,13 @@ int mult (int x , int y)
 
 int d (int x , int y)
 {
-	int z;
 	if (y==0)
 	{
-	z=x;
-	x=y;
-	y=z;
-	return x/y;
+	//x=2 y=3
+	x=x+y;//x=5
+	y=x-y;//y=5-3=2
+	x=x-y;//x=5-2=3
+
 	}
 	return x/y ;
 
